@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>登录</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="page">
+        <!-- Navigation -->
+        <nav id="navigation" class="d-flex justify-content-around navbar navbar-light bg-light fixed-top">
+            <!-- logo -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.svg" width="40" height="40">&nbsp;首页
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content -->
+        <div class="card">
+            <div class="card-header">填入信息后登录:</div>
+            <div class="card-body">
+                <div>
+                    <label for="text"><img src="images/user.svg" width="20" height="20"
+                            class="img-fluid" />&nbsp;名字:&nbsp;<span id="feedback-mail">正确</span></label>
+                    <input id="text" type="text" class="form-control" placeholder="填入您的名字" />
+                </div>
+                <br />
+                <div>
+                    <label for="password"><img src="images/password.svg" width="20" height="20"
+                            class="img-fluid" />&nbsp;密码:&nbsp;<span id="feedback-password">错误</span></label>
+                    <input id="password" type="password" class="form-control" placeholder="填入您的密码" />
+                </div>
+            </div>
+            <div class="card-footer">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" title="真的忘了吗???">忘记密码???</a>
+                &nbsp;
+                <a href="register.html" title="点击前往注册">注册一个???</a>
+                <button class="float-left btn btn-outline-info">登录</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

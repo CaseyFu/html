@@ -1,0 +1,59 @@
+$(function(){
+    loader();
+    up();
+    sidePanel();
+    me();
+
+});
+let qq = true;
+let weChat = true;
+let me = function(){    //微信, qq
+    $("#weChat").click(function(){
+        $("#weChat_QR").show();
+    });
+    $("#close_weChat").click(function(){
+        $("#weChat_QR").fadeOut();
+    })
+    $("#qq").click(function(){
+        $("#qq_QR").show();
+    })
+    $("#close_qq").click(function(){
+        $("#qq_QR").fadeOut();
+    })
+}
+
+let sidePanel = function(){ //侧边导航
+    $(".sideBtn").click(function(){
+        $(".side-panel").toggle();
+        if(sideFlag){
+             $(".sideBtn").attr("src","images/left.svg");
+             sideFlag = false;  
+        }else{
+             $(".sideBtn").attr("src", "images/right.svg");
+             sideFlag = true;
+        } 
+ });
+}
+
+let sideFlag = true; //侧边分类的箭头
+let up = function(){    
+    $(window).scroll(function (event) {
+        let height_present = $(window).scrollTop();
+        if(height_present < 400){
+            $(".up").hide();
+        }else{
+            $(".up").show();
+        }
+    });
+}
+
+let loader = function(){    //加载动画
+    $(".loader").fadeOut("slow");
+    $(".side-panel").hide();
+    $(".up").hide();
+    $("#weChat_QR").hide();
+    $("#qq_QR").hide();
+};
+
+
+    

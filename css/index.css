@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    background-color: #f0efef;
+}
+/* 加载gif动画 */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index:9999;
+    background: url("../images/loader1.gif") center no-repeat #fff;
+}
+
+/* 导航栏 */
+/* 导航下边阴影 */
+#navigation{
+    box-shadow: 3px 0 5px grey;
+}
+/* 头像 */
+#nav-head-img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px double skyblue;
+    overflow: hidden;
+    margin-top:4px;
+}
+/* 用户名 */
+#nav-username{
+    display: inline-block;
+    line-height: 20px;
+}
+
+/* 主体信息 */
+.fieldset-news{
+    margin-top:40px;
+    border:1px solid gray;
+}
+
+/* 书信息 */
+.media{
+    font-size:0.8em;
+    min-width:330px;
+    max-width: 500px;
+    background: #fff;
+    margin:10px;
+    box-shadow: 3px 3px 4px gray;
+}
+.media-header{
+    padding:10px;
+}
+.media-body{ 
+    line-height: 1.5;
+    padding:10px 10px 0 0;
+}
+.media-body-top{
+    height:100px;
+    /* background: skyblue; */
+    overflow: hidden;
+}
+.media-body-bottom{
+    line-height: 30px;
+    /* background: pink; */
+    height:30px;
+    border-top:1px solid gray;
+}
+
+
+/* 侧边分类及功能 */
+.side-panel{
+    padding-top:90px; 
+    position: fixed;
+    top:0;
+    left:0;
+    width: 80%;
+    height:100%;
+    background: white;
+    z-index: 999;
+    opacity: 0.9;
+    box-shadow: 0 10px 10px black;
+}
+.category-panel{
+    border-top:3px dotted rgb(56, 139, 56);
+    padding:0 10px;
+}
+.category-panel div a.list-group-item{
+    font-size: 0.9em;
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    margin:3px;
+    border-right:1px dotted greenyellow;
+    padding:0;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+}
+
+
+
+
+/* 全局标签 */
+legend{
+    margin-left:10%;
+    width:4em;
+}
+hr{
+    margin:6px;
+    border:1px solid gray;
+}
+
+
+
+
+
+
+
+/* 小组件 */
+.up{
+    position: fixed;
+    right:0;
+    bottom:70px;
+}
+/* 悬浮手指 */
+#weChat:hover{
+    cursor: pointer;
+}
+#qq:hover{
+    cursor: pointer;
+}
+.sideBtn:hover{
+    cursor: pointer;
+}
+.star:hover{
+    cursor: pointer;
+}
+.up:hover{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+.display-5{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-6{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-7{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-8{
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
