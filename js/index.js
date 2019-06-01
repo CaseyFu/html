@@ -19,19 +19,25 @@ let me = function(){    //微信, qq
         $("#weChat_QR").show();
     });
     $("#close_weChat").click(function(){
-        $("#weChat_QR").fadeOut();
+        $("#weChat_QR").hide();
     })
     $("#qq").click(function(){
         $("#qq_QR").show();
     })
     $("#close_qq").click(function(){
-        $("#qq_QR").fadeOut();
+        $("#qq_QR").hide();
+    })
+    $("#user").click(function(){
+        $("#self-info").show();
+    })
+    $("#close_self-info").click(function(){
+        $("#self-info").hide();
     })
 }
 
 let sidePanel = function(){ //侧边导航
     $(".sideBtn").click(function(){
-        $(".side-panel").toggle();
+        $(".outer-side-panel").toggle();
         if(sideFlag){
              $(".sideBtn").attr("src","images/left.svg");
              sideFlag = false;  
@@ -56,10 +62,11 @@ let up = function(){
 
 let loader = function(){    //加载动画
     $(".loader").fadeOut("slow");
-    $(".side-panel").hide();
+    $(".outer-side-panel").hide();
     $(".up").hide();
     $("#weChat_QR").hide();
     $("#qq_QR").hide();
+    $("#self-info").hide();
 };
 
 
