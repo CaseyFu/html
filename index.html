@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
@@ -352,31 +353,34 @@
                     <img src="images/recommend.svg" width="50" height="50" /><span class="display-6">推荐</span></legend>
             </fieldset>
             <div class="d-flex flex-wrap justify-content-center">
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
+                <div class="wow animated fadeInUp" data-wow-duration="1" data-wow-delay="1">
+                    <div class="media">
+                        <div class="media-header">
+                            <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
                         </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
+                        <div class="media-body">
+                            <div class="media-body-top">
+                                <div>
+                                    书名:<a href="#">《沙丘》</a>
+                                </div>
+                                <div>
+                                    作者:<a href="#">尼古拉斯</a>
+                                </div>
+                                <div>
+                                    简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
+                                </div>
+                            </div>
+                            <div class="media-body-bottom">
+                                <img src="images/star_vivid.svg" width="30" height="30">
+                                <span id="num_people">300</span>人很喜欢这本书
+                                <div class="float-right">
+                                    <a href="#">[查看详情]</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="media">
                     <div class="media-header">
                         <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
@@ -410,32 +414,32 @@
     <div style="padding:2% 0;margin-top:50px;background-color:#7892d8;">
         <div class="display-6 text-white text-center">Copyright &copy; Xfk 2019</div>
         <div style="width:110px;margin:10px auto;">
-            <img id="weChat" src="images/wechat.svg" width="50" height="50">
-            <img id="qq" src="images/qq.svg" width="50" height="50">
+            <img id="weChat" src="images/wechat.svg" width="40" height="40">
+            <img id="qq" src="images/qq.svg" width="40" height="40">
+            <img id="phone" src="images/phone.svg" width="40" height="40">
+            <img id="mail" src="images/footer-mail.svg" width="40" height="40">
         </div>
         <div style="width:200px;margin:10px auto;" class="text-white">
             phone:18725651542<br />email:1659467760@qq.com
         </div>
         <div id="weChat_QR" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#333;opacity: 0.9;">
-                <div style="width:200px;height:200px;margin:200px auto 0 auto">
-                    <img src="images/weChat.jpg" width="200" height="200">
-                </div>
-                <div style="width:50px;height:50px;margin:20px auto">
-                    <button id="close_weChat" class="btn btn-lg btn-danger">&times;</button>
-                </div>
+            <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                <img src="images/weChat.jpg" width="200" height="200">
+            </div>
+            <div style="width:50px;height:50px;margin:20px auto">
+                <button id="close_weChat" class="btn btn-lg btn-danger">&times;</button>
+            </div>
         </div>
 
         <div id="qq_QR" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#333;opacity: 0.9;">
-                <div style="width:200px;height:200px;margin:200px auto 0 auto">
-                    <img src="images/qq.jpg" width="200" height="200">
-                </div>
-                <div style="width:50px;height:50px;margin:20px auto">
-                    <button id="close_qq" class="btn btn-lg btn-danger">&times;</button>
-                </div>
+            <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                <img src="images/qq.jpg" width="200" height="200">
+            </div>
+            <div style="width:50px;height:50px;margin:20px auto">
+                <button id="close_qq" class="btn btn-lg btn-danger">&times;</button>
+            </div>
         </div>
-            
-            
-        </div>
+    </div>
     </div>
 
     <!--fixed位置-->
@@ -518,8 +522,8 @@
         </a>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

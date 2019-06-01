@@ -3,7 +3,14 @@ $(function(){
     up();
     sidePanel();
     me();
-
+    wow.init();
+});
+let wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
 });
 let qq = true;
 let weChat = true;
