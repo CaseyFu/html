@@ -54,7 +54,10 @@ body {
 .fieldset-announcement legend{
     width:6em;
 }
-
+.card{
+    margin:5% auto;
+    padding:0;
+}
 /* 书信息 */
 .media{
     font-size:0.75em;
@@ -120,17 +123,7 @@ body {
     box-shadow: 1px 1px 3px gray;
     line-height: 25px;
 }
-.black-panel{
-    position: fixed;
-    width:50%;
-    height:20%;
-    left:50%;
-    top:5%;
-    border:3px solid gray;
-    background:black;
-    color:white;
-    z-index: 9999;
-}
+
 
 
 

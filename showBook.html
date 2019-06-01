@@ -1,1 +1,204 @@
 <!-- 书的详情页 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>书的详情页,这里是书名</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="page">
+        <!-- Navigation -->
+        <nav id="navigation" class="d-flex justify-content-around navbar navbar-light bg-light fixed-top">
+            <!-- 向右展开 -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <img src="images/right.svg" width="30" height="30" class="sideBtn" />
+                </li>
+            </ul>
+            <!-- logo -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" width="40" height="40">book</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-right">
+                <li class="nav-item">
+                    <p class="display-7" style="margin:0">这里展示书名</p>
+                </li>
+            </ul>
+            <!-- 头像 -->
+            <ul style="display: none;" class="navbar-nav">
+                <li class="nav-item">
+                    <a id="nav-username" href="#">
+                        <span id="date">上午好!</span>&nbsp;<span id="username">xfk</span>
+                    </a>
+                    <img src="images/loader.gif" id="nav-head-img" width="40" height="40" />
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="display-6 text-white text-center">Copyright &copy; Xfk 2019</div>
+        <div class="footer-panel">
+            <span class="text-white display-8">联系我:</span>
+            <img id="weChat" src="images/wechat.svg" width="40" height="40">
+            <img id="qq" src="images/qq.svg" width="40" height="40">
+            <img id="user" src="images/footer-user.svg" width="35" height="35">
+            <div class="iconfont display-8">
+                图标来自:
+                <a href="https://www.iconfont.cn" target="_blank">
+                    <span>iconfont</span>
+                </a>
+            </div>
+        </div>
+        <div id="weChat_QR" class="footer-info">
+            <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                <img src="images/weChat.jpg" width="200" height="200">
+            </div>
+            <div style="width:50px;height:50px;margin:20px auto">
+                <button id="close_weChat" class="btn btn-lg btn-danger">&times;</button>
+            </div>
+        </div>
+        <div id="qq_QR" class="footer-info">
+            <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                <img src="images/qq.jpg" width="200" height="200">
+            </div>
+            <div style="width:50px;height:50px;margin:20px auto">
+                <button id="close_qq" class="btn btn-lg btn-danger">&times;</button>
+            </div>
+        </div>
+        <div id="self-info" class="footer-info">
+            <div class="card" style="width:300px;margin:200px auto 0 auto">
+                <div class="card-header">我的信息 <button id="close_self-info"
+                        class="btn btn-danger float-right">&times;</button></div>
+                <div class="card-body">
+                    <p>电话:187256...</p>
+                    <p>邮箱:165946...@qq.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!--end page-->
+
+    <!--fixed位置-->
+    <div class="outer-side-panel">
+        <div class="side-panel">
+            <fieldset class="category-panel">
+                <legend><img src="./images/category.svg" width="38" height="38">分 类</legend>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/history.svg" width="25" height="25">
+                        <br />
+                        <span>历史</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>文学</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/metropolis.svg" width="25" height="25">
+                        <br />
+                        <span>都市</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/love.svg" width="25" height="25">
+                        <br />
+                        <span>言情</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/question.svg" width="25" height="25">
+                        <br />
+                        <span>悬疑</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/earth.svg" width="25" height="25">
+                        <br />
+                        <span>科学</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/military.svg" width="25" height="25">
+                        <br />
+                        <span>军事</span>
+                    </a>
+                    <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                        <img src="./images/muscle.svg" width="25" height="25">
+                        <br />
+                        <span>武侠</span>
+                    </a>
+                </div>
+            </fieldset>
+            <fieldset class="category-panel">
+                <legend><img src="./images/category.svg" width="38" height="38">功 能</legend>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                        <img src="./images/history.svg" width="25" height="25">
+                        <br />
+                        <span>购物车</span>
+                    </a>
+                    <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>后台入口</span>
+                    </a>
+                    <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>排行榜</span>
+                    </a>
+                    <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>全部分类</span>
+                    </a>
+                    <a class="list-group-item list-group-item-danger list-group-item-action" href="login.html">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>登录</span>
+                    </a>
+                    <a class="list-group-item list-group-item-danger list-group-item-action" href="register.html">
+                        <img src="./images/literacy.svg" width="25" height="25">
+                        <br />
+                        <span>注册</span>
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <!-- 返回顶部 -->
+    <div class="up">
+        <a href="#">
+            <img src="images/up.svg" width="50" height="50" />
+        </a>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

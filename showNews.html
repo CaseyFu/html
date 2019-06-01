@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>羽书屋</title>
+    <title>新闻页, 这里展示新闻文章</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -16,34 +16,31 @@
     <div id="page">
         <!-- 导航栏 -->
         <nav id="navigation"
-            class="d-flex justify-content-around navbar navbar-light navbar-expand- bg-light fixed-top">
+            class="d-flex justify-content-around navbar navbar-light bg-light fixed-top">
             <!-- 向右展开 -->
-            <ul class="navbar-nav ml-left">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <img src="images/right.svg" width="30" height="30" class="sideBtn img-fluid" />
+                    <img src="images/right.svg" width="30" height="30" class="sideBtn" />
                 </li>
             </ul>
             <!-- logo -->
-            <ul style="margin-left: 12%;" class="navbar-nav ml-center">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#"><img src="images/logo.svg" width="40" height="40">羽书屋</a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" width="40" height="40">book</a>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-right">
+                    <li class="nav-item">
+                        <p class="display-7" style="margin:0">文章</p>
+                    </li>
+                </ul>
             <!-- 头像 -->
-            <ul style="display: none;" class="navbar-nav ml-right">
+            <ul style="display: none;" class="navbar-nav">
                 <li class="nav-item">
                     <a id="nav-username" href="#">
                         <span id="date">上午好!</span>&nbsp;<span id="username">xfk</span>
                     </a>
-                    <img src="images/loader.gif" id="nav-head-img" width="40" height="40" class="img-fluid" />
-                </li>
-            </ul>
-            <!-- 登录注册 -->
-            <ul class="navbar-nav ml-right">
-                <li class="nav-item">
-                    <a class="text-right" href="login.html">登录</a>
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a class="text-right" href="register.html">注册</a>
+                    <img src="images/loader.gif" id="nav-head-img" width="40" height="40" />
                 </li>
             </ul>
         </nav>
@@ -51,462 +48,159 @@
         <!-- 滚屏及新闻 -->
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div id="carouselExampleIndicators" class="carousel slide my-3" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img class="d-block img-fluid rounded" src="images/1.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block img-fluid rounded" src="images/1.jpg" alt=" Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block img-fluid rounded" src="images/1.jpg" alt=" Second slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <fieldset class="fieldset-news">
-                        <legend><img src="images/nav.svg" width="38" height="38">导航</legend>
-                        <ul>
-                            <li><a href="#hot">最火书籍</a></li>
-                            <li><a href="#new">新书上架</a></li>
-                            <li><a href="#recommend">大师推荐</a></li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="fieldset-news">
-                        <legend><img src="images/article.svg" width="38" height="38">文章</legend>
-                        <ul>
-                            <li><a href="#">读书, 你需要养成这些习惯</a></li>
-                            <li><a href="#">世界读书日活动</a></li>
-                            <li><a href="#">新书《我的世界》上线</a></li>
-                            <li><a href="#">书——精神食粮</a></li>
-                        </ul>
-                    </fieldset>
+                
+
+
+
+            </div>
+        </div><!--end page-->
+            
+
+    
+
+    
+    <!-- footer -->
+    <div class="footer">
+            <div class="display-6 text-white text-center">Copyright &copy; Xfk 2019</div>
+            <div class="footer-panel">
+                <span class="text-white display-8">联系我:</span>
+                <img id="weChat" src="images/wechat.svg" width="40" height="40">
+                <img id="qq" src="images/qq.svg" width="40" height="40">
+                <img id="user" src="images/footer-user.svg" width="35" height="35">
+                <div class="iconfont display-8">
+                    图标来自:
+                    <a href="https://www.iconfont.cn" target="_blank">
+                        <span>iconfont</span>
+                    </a>
                 </div>
             </div>
-
-            <!-- 公告栏 -->
-            <div>
-                <fieldset class="fieldset-news">
-                    <legend><img src="images/article.svg" width="38" height="38">公告</legend>
-                    <h3>最新通知:</h3>
-                    <p>羽书屋将迎来重大更新, v0.1.1版本</p>
+            <div id="weChat_QR" class="footer-info">
+                <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                    <img src="images/weChat.jpg" width="200" height="200">
+                </div>
+                <div style="width:50px;height:50px;margin:20px auto">
+                    <button id="close_weChat" class="btn btn-lg btn-danger">&times;</button>
+                </div>
+            </div>
+            <div id="qq_QR" class="footer-info">
+                <div style="width:200px;height:200px;margin:200px auto 0 auto">
+                    <img src="images/qq.jpg" width="200" height="200">
+                </div>
+                <div style="width:50px;height:50px;margin:20px auto">
+                    <button id="close_qq" class="btn btn-lg btn-danger">&times;</button>
+                </div>
+            </div>
+            <div id="self-info" class="footer-info">
+                <div class="card" style="width:300px;margin:200px auto 0 auto">
+                    <div class="card-header">我的信息 <button id="close_self-info"
+                            class="btn btn-danger float-right">&times;</button></div>
+                    <div class="card-body">
+                        <p>电话:187256...</p>
+                        <p>邮箱:165946...@qq.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+        <!--fixed位置-->
+        <div class="outer-side-panel">
+            <div class="side-panel">
+                <fieldset class="category-panel">
+                    <legend><img src="./images/category.svg" width="38" height="38">分 类</legend>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/history.svg" width="25" height="25">
+                            <br />
+                            <span>历史</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>文学</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/metropolis.svg" width="25" height="25">
+                            <br />
+                            <span>都市</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/love.svg" width="25" height="25">
+                            <br />
+                            <span>言情</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/question.svg" width="25" height="25">
+                            <br />
+                            <span>悬疑</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/earth.svg" width="25" height="25">
+                            <br />
+                            <span>科学</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/military.svg" width="25" height="25">
+                            <br />
+                            <span>军事</span>
+                        </a>
+                        <a class="list-group-item list-group-item-success list-group-item-action" href="#">
+                            <img src="./images/muscle.svg" width="25" height="25">
+                            <br />
+                            <span>武侠</span>
+                        </a>
+                    </div>
+                </fieldset>
+                <fieldset class="category-panel">
+                    <legend><img src="./images/category.svg" width="38" height="38">功 能</legend>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                            <img src="./images/history.svg" width="25" height="25">
+                            <br />
+                            <span>购物车</span>
+                        </a>
+                        <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>后台入口</span>
+                        </a>
+                        <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>排行榜</span>
+                        </a>
+                        <a class="list-group-item list-group-item-info list-group-item-action" href="#">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>全部分类</span>
+                        </a>
+                        <a class="list-group-item list-group-item-danger list-group-item-action" href="login.html">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>登录</span>
+                        </a>
+                        <a class="list-group-item list-group-item-danger list-group-item-action" href="register.html">
+                            <img src="./images/literacy.svg" width="25" height="25">
+                            <br />
+                            <span>注册</span>
+                        </a>
+                    </div>
                 </fieldset>
             </div>
-            <!-- 分类展示 -->
-            <!-- 最火 -->
-            <div id="hot"></div>
-            <fieldset style="margin-top:70px;border-top:2px solid gray">
-                <legend style="width:5em;">
-                    <img src="images/flame.svg" width="50" height="50" /><span class="display-6">热门</span></legend>
-            </fieldset>
-            <div class="d-flex flex-wrap justify-content-center">
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="./images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="./images/star_gray.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="./images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="./images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 新书 -->
-            <div id="new"></div>
-            <fieldset style="margin-top:70px;border-top:2px solid gray">
-                <legend style="width:5em;">
-                    <img src="images/new.svg" width="50" height="50" /><span class="display-6">上新</span></legend>
-            </fieldset>
-            <div class="d-flex flex-wrap justify-content-center">
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_gray.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_gray.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_gray.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="media-header">
-                        <img class="img-fluid" width="90" height="140" src="./images/book_size.jpg" alt="书图片">
-                    </div>
-                    <div class="media-body">
-                        <div class="media-body-top">
-                            <div>
-                                书名:<a href="#">《沙丘》</a>
-                            </div>
-                            <div>
-                                作者:<a href="#">尼古拉斯</a>
-                            </div>
-                            <div>
-                                简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                            </div>
-                        </div>
-                        <div class="media-body-bottom">
-                            <img src="images/star_vivid.svg" width="30" height="30">
-                            <span id="num_people">300</span>人很喜欢这本书
-                            <div class="float-right">
-                                <a href="#">[查看详情]</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- 推荐书 -->
-            <div id="recommend"></div>
-            <fieldset style="margin-top:70px;border-top:2px solid gray">
-                <legend style="width:5em;">
-                    <img src="images/recommend.svg" width="50" height="50" /><span class="display-6">推荐</span></legend>
-            </fieldset>
-            <div class="d-flex flex-wrap justify-content-center">
-                <div class="wow animated fadeInUp" data-wow-duration="1" data-wow-delay="1">
-                    <div class="media">
-                        <div class="media-header">
-                            <img class="img-fluid" width="90" height="140" src="images/book_size.jpg" alt="书图片">
-                        </div>
-                        <div class="media-body">
-                            <div class="media-body-top">
-                                <div>
-                                    书名:<a href="#">《沙丘》</a>
-                                </div>
-                                <div>
-                                    作者:<a href="#">尼古拉斯</a>
-                                </div>
-                                <div>
-                                    简介:<span>呵呵哈哈哈或或或或或或或或或或或呵呵哈哈哈或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或hhhhhhh或或或或</span>
-                                </div>
-                            </div>
-                            <div class="media-body-bottom">
-                                <img src="images/delight.svg" width="30" height="30">
-                                <span id="num_people">300</span>人很喜欢这本书
-                                <div class="float-right">
-                                    <a href="#">[查看详情]</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <!-- footer -->
-    <div style="padding:2% 0;margin-top:50px;background-color:#7892d8;">
-        <div class="display-6 text-white text-center">Copyright &copy; Xfk 2019</div>
-        <div style="width:110px;margin:10px auto;">
-            <img id="weChat" src="images/wechat.svg" width="40" height="40">
-            <img id="qq" src="images/qq.svg" width="40" height="40">
-            <img id="phone" src="images/phone.svg" width="40" height="40">
-            <img id="mail" src="images/footer-mail.svg" width="40" height="40">
+        
+    
+        <!-- 返回顶部 -->
+        <div class="up">
+            <a href="#">
+                <img src="images/up.svg" width="50" height="50" />
+            </a>
         </div>
-        <div style="width:200px;margin:10px auto;" class="text-white">
-            phone:18725651542<br />email:1659467760@qq.com
-        </div>
-        <div id="weChat_QR" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#333;opacity: 0.9;">
-            <div style="width:200px;height:200px;margin:200px auto 0 auto">
-                <img src="images/weChat.jpg" width="200" height="200">
-            </div>
-            <div style="width:50px;height:50px;margin:20px auto">
-                <button id="close_weChat" class="btn btn-lg btn-danger">&times;</button>
-            </div>
-        </div>
-
-        <div id="qq_QR" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#333;opacity: 0.9;">
-            <div style="width:200px;height:200px;margin:200px auto 0 auto">
-                <img src="images/qq.jpg" width="200" height="200">
-            </div>
-            <div style="width:50px;height:50px;margin:20px auto">
-                <button id="close_qq" class="btn btn-lg btn-danger">&times;</button>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!--fixed位置-->
-    <div class="side-panel">
-        <fieldset class="category-panel">
-            <legend><img src="./images/category.svg" class="img-fluid" width="38" height="38">分 类</legend>
-            <div class="d-flex flex-wrap justify-content-center">
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/history.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>历史</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/literacy.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>文学</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/metropolis.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>都市</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/love.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>言情</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/question.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>悬疑</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/earth.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>科学</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/military.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>军事</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/muscle.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>武侠</span>
-                </a>
-            </div>
-        </fieldset>
-        <fieldset class="category-panel">
-            <legend><img src="./images/category.svg" class="img-fluid" width="38" height="38">功 能</legend>
-            <div class="d-flex flex-wrap justify-content-center">
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/history.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>购物车</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/literacy.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>后台入口</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/literacy.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>排行榜</span>
-                </a>
-                <a class="list-group-item list-group-item-success list-group-item-action" href="#">
-                    <img src="./images/literacy.svg" class="img-fluid" width="25" height="25">
-                    <br />
-                    <span>全部分类</span>
-                </a>
-            </div>
-        </fieldset>
-    </div>
-    <!-- 返回顶部 -->
-    <div class="up">
-        <a href="#">
-            <img src="images/up.svg" width="50" height="50" />
-        </a>
-    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
