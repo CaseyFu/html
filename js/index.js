@@ -2,7 +2,7 @@ $(function(){
     loader();
     up();
     sidePanel();
-    me();
+    clickTrigger();
     wow.init();
 });
 let wow = new WOW({
@@ -12,9 +12,11 @@ let wow = new WOW({
     mobile: true,
     live: true
 });
-let qq = true;
-let weChat = true;
-let me = function(){    //微信, qq
+
+
+
+
+let clickTrigger = function(){    //微信, qq
     $("#weChat").click(function(){
         $("#weChat_QR").show();
     });
@@ -32,6 +34,14 @@ let me = function(){    //微信, qq
     })
     $("#close_self-info").click(function(){
         $("#self-info").hide();
+    })
+    $(".star").click(function(){    //点赞表情
+        let test = $(this).attr("src");
+        if(test.includes("delight")){
+           $(this).attr("src","images/indifferent.svg"); 
+        }else{
+            $(this).attr("src","images/delight.svg"); 
+        }
     })
 }
 
