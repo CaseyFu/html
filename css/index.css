@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 100px;
     background-color: #f0efef;
     background-image:url("../images/background.jpg");
     background-repeat: repeat;
@@ -22,21 +22,18 @@ body {
 #navigation{
     box-shadow: 3px 0 5px grey;
 }
+
 /* 头像 */
 #nav-head-img{
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 4px double skyblue;
+    border: 3px double skyblue;
     overflow: hidden;
-    margin-top:4px;
 }
-/* 用户名 */
-#nav-username{
-    display: inline-block;
-    line-height: 20px;
-}
+
+
 
 /* 主体信息 */
 .fieldset-news{
@@ -54,12 +51,13 @@ body {
 .fieldset-announcement legend{
     width:6em;
 }
+/* 登录与注册 */
 .card{
     margin:5% auto;
     padding:0;
 }
 /* 书信息 */
-.media{
+.media-custom{
     font-size:0.75em;
     min-width:330px;
     max-width: 350px;
@@ -67,25 +65,29 @@ body {
     margin:10px;
     box-shadow: 3px 3px 4px gray;
 }
-.media-header{
+.media-header-custom{
     padding:10px;
 }
-.media-body{ 
+.media-body-custom{ 
     line-height: 1.35;
     padding:10px 10px 0 0;
 }
 .media-body-top{
     height:100px;
-    /* background: skyblue; */
     overflow: hidden;
 }
 .media-body-bottom{
     line-height: 30px;
-    /* background: pink; */
     height:30px;
     border-top:1px solid gray;
 }
+.article{
 
+}
+.article p{
+    padding:5px 20px;
+    text-indent: 2em;
+}
 
 /* 侧边分类及功能 */
 .outer-side-panel{
@@ -124,6 +126,16 @@ body {
     line-height: 25px;
 }
 
+.book-comment-head{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    background: skyblue;
+}
+.media-body-comment{
+    margin:20px;
+    font-size:1em;
+}
 
 
 
@@ -137,6 +149,7 @@ hr{
     border:1px solid gray;
 }
 
+/*footer iconfont*/
 .iconfont{
     color: white;
 }

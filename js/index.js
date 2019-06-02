@@ -36,8 +36,8 @@ let clickTrigger = function(){    //微信, qq
         $("#self-info").hide();
     })
     $(".star").click(function(){    //点赞表情
-        let test = $(this).attr("src");
-        if(test.includes("delight")){
+        let src = $(this).attr("src");
+        if(src.includes("delight")){
            $(this).attr("src","images/indifferent.svg"); 
         }else{
             $(this).attr("src","images/delight.svg"); 
@@ -47,18 +47,17 @@ let clickTrigger = function(){    //微信, qq
 
 let sidePanel = function(){ //侧边导航
     $(".sideBtn").click(function(){
+        let src = $(this).attr("src");
         $(".outer-side-panel").toggle();
-        if(sideFlag){
-             $(".sideBtn").attr("src","images/left.svg");
-             sideFlag = false;  
+        if(src.includes("right")){
+             $(this).attr("src","images/left.svg"); 
         }else{
-             $(".sideBtn").attr("src", "images/right.svg");
-             sideFlag = true;
+             $(this).attr("src", "images/right.svg");
         } 
  });
 }
 
-let sideFlag = true; //侧边分类的箭头
+// let sideFlag = true; //侧边分类的箭头
 let up = function(){    
     $(window).scroll(function (event) {
         let height_present = $(window).scrollTop();
