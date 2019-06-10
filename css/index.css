@@ -6,6 +6,9 @@ body {
   background-image: url('../images/background.jpg');
   background-repeat: repeat;
 }
+p {
+  text-indent: 2em;
+}
 /* 加载gif动画 */
 .loader {
   position: fixed;

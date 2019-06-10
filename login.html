@@ -35,40 +35,46 @@
           <div class="col-lg-5 col-md-8 col-sm-12 card">
             <div class="card-header">填入信息后登录:</div>
             <div class="card-body">
-              <label for="text">
-                <img
-                  src="images/user-login-register.svg"
-                  width="20"
-                  height="20"
+              <form action="#">
+                <label for="text">
+                  <img
+                    src="images/user-login-register.svg"
+                    width="20"
+                    height="20"
+                  />
+                  用户名:
+                  <span id="feedback-username"> </span>
+                </label>
+                <input
+                  id="text"
+                  type="text"
+                  class="form-control"
+                  placeholder="填入您的名字"
                 />
-                用户名:
-                <span id="feedback-username"> </span>
-              </label>
-              <input
-                id="text"
-                type="text"
-                class="form-control"
-                placeholder="填入您的名字"
-              />
-              <br />
-              <label for="password"
-                ><img
-                  src="images/password.svg"
-                  width="20"
-                  height="20"/>密码:<span id="feedback-password"></span
-              ></label>
-              <input
-                id="password"
-                type="password"
-                class="form-control"
-                placeholder="填入您的密码"
-              />
+                <br />
+                <label for="password"
+                  ><img
+                    src="images/password.svg"
+                    width="20"
+                    height="20"/>密码:<span id="feedback-password"></span
+                ></label>
+                <input
+                  id="password"
+                  type="password"
+                  class="form-control"
+                  placeholder="填入您的密码"
+                />
+              </form>
             </div>
             <div class="card-footer" style="line-height: 37px;">
               <a href="#" title="真的忘了吗???">忘记密码???</a>
               &nbsp;
               <a href="register.html" title="点击前往注册">注册一个???</a>
-              <button class="float-right btn btn-outline-info">登录</button>
+              <input
+                type="submit"
+                class="float-right btn btn-outline-info"
+                value="登录"
+              />
             </div>
           </div>
         </div>
