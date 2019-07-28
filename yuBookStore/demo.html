@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <title>bs4 demo</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/popper_2017.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .blue {
+            background-color: skyblue;
+        }
+
+        /*.test::before {*/
+         /*!*content: url("/picture/big.png");*!*/
+         /*!*color: blue;*!*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-primay fixed-top  clearfix">
+
+    <a class="navbar-brand" href="#">Logo</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">aaaa</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">bbbb</a>
+        </li>
+    </ul>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#xfk">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="xfk" class="navbar-collapse collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">导航栏</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">second</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">third</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">four</a>
+            </li>
+
+            <li class="nav-item">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="search"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">serach</button>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">下拉</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">first link</a>
+                    <a class="dropdown-item" href="#">second link</a>
+                    <a class="dropdown-item" href="#">third link</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="navbar-text">girl</span>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<div style="font-size:2em;font-weight:100; font-family: sans-serif;background: #fbfbfb;">& 这里是一段文本这里是一段文本这里是一段文本abcdefghijklmnopqrstuvwxyzABCD1234</div>
+<br/>
+<div class="container-fluid" style="margin-top:80px">
+    <h2>网格</h2>
+    <div class="row">
+        <div class="col-sm-5 blue">sm占5列</div>
+        <div class="col-sm-3 bg-success">sm占3列</div>
+        <div class="col-sm-4 blue">sm占4列</div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 bg-success">md占1列</div>
+        <div class="col-md-4 blue">md占4列</div>
+        <div class="col-md-2 bg-success">md占2列</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue">lg占2列</div>
+        <div class="col-lg-3 bg-success">lg占3列</div>
+        <div class="col-lg-4 blue">lg占4列</div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 bg-success">xl占4列</div>
+        <div class="col-xl-3 blue">xl占3列</div>
+        <div class="col-xl-2 bg-success">xl占2列</div>
+    </div>
+    <hr/>
+    <h1>1级标题aaa(2.5rem)
+        <small>用了small</small>
+        没用small
+    </h1>
+    <h2>2级标题aaa(2rem)</h2>
+    <h3>3级标题aaa(1.75rem)</h3>
+    <h4>4级标题aaa(1.5rem)</h4>
+    <h5>5级标题aaa(1.25rem)</h5>
+    <h6>6级标题aaa(1rem=16px)</h6>
+    <h3 class="display-1">display-1</h3>
+    <h3 class="display-2">display-2</h3>
+    <h3 class="display-3">display-3</h3>
+    <h3 class="display-4">display-4</h3>
+    <hr/>
+    <h3>这里是
+        <mark>高亮</mark>
+    </h3>
+    <hr class="hr"/>
+    <h2>blockquote引用文本</h2>
+    <blockquote class="blockquote">
+        <p>这里是引用的文本hhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+        <footer class="blockquote-footer">这里是引用文本的页脚footer</footer>
+    </blockquote>
+    <hr/>
+    <h2>dl列表</h2>
+    <dl>
+        <dt>标题1</dt>
+        <dd>- 内容1hhhhhhhhhhhhhhhhh</dd>
+        <dt>标题2</dt>
+        <dd>- 内容2hhhhhhhhhhhhhhhhh</dd>
+    </dl>
+    <hr/>
+    <h2>code标签<code>public static void main(String []args){return 0;}</code></h2>
+    <hr/>
+    <h2>kbd标签</h2>
+    <p>按<kbd>ctrl+c</kbd>复制</p>
+    <hr/>
+    <h2>pre预定义,上传代码</h2>
+    <style>
+        .pre-height {
+            max-height: 100px;
+        }
+    </style>
+    <pre class="pre-scrollable pre-height">
+            .pre-scrollable类设置pre框最大高度340px,超出这个大小出现滚动条
+            public static void main(String []args){
+                return 0;
+            }
+            if{
+
+            }else{
+
+            }
+        </pre>
+    <hr/>
+    <h2>对文本的操作</h2>
+    <p class="font-weight-bold">.font-weight-bold这是一段加粗文本</p>
+    <p class="font-weight-normal">.font-weight-normal这是一段普通文本</p>
+    <p class="font-weight-light">.font-weight-light这是一段变细文本</p>
+    <p class="font-italic">.font-italic这是一段斜体文本</p>
+    <p class="lead">.lead这是一段显眼的文本</p>
+    <p>
+        <small>small标签这是一段文本</small>
+        |<span class="small">.small类这是一段文本</span></p>
+    <div>
+        <p class="text-left">.text-left这是一段文本,左对齐</p>
+        <p class="text-center">.text-center这是一段文本,居中</p>
+        <p class="text-right">.text-right这是一段文本,右对齐</p>
+    </div>
+    <p class="text-justify">.text-justify这是一段文本,文字超出宽度自动换行,不行,太短了,得加两个字</p>
+    <p class="text-nowrap">.text-nowrap这里超出了框不会换行,一般不用</p>
+    <p>.text-lowercase,uppercase大小写AB<span class="text-lowercase font-weight-bold">CD</span>EFGHIJKLMnopqrstuv<span
+            class="text-uppercase font-weight-bold">wx</span>yz</p>
+    <p>.text-capitalize首字母大写<span class="text-capitalize">absolutely</span></p>
+    <p>abbr标签<abbr title="World Health Organization" class="font-weight-bold">WHO</abbr>悬浮有提示;加了.initialism类之后字号变小<abbr
+            title="World Health Organization" class="initialism font-weight-bold">WHO</abbr></p>
+
+    <hr/>
+    <ul class="list-unstyled">
+        <li>.list-unstyled类,使用中,移除html默认的列表样式</li>
+        <li>
+            <ul>
+                <li>嵌套的ul列表未使用.list-unstyled类,前面有项目符号</li>
+            </ul>
+        </li>
+    </ul>
+    <hr/>
+    <ul class="list-inline">
+        .list-inline将所有列表放在一行.list-inline-item
+        <li class="list-inline-item">A</li>
+        <li class="list-inline-item">B</li>
+        <li class="list-inline-item">C</li>
+    </ul>
+    <h2>颜色</h2>
+    <p class="text-muted">.text-muted汉字英文abcdABCD1234</p>
+    <p class="text-primary">.text-primary汉字英文abcdABCD1234</p>
+    <p class="text-success">.text-success汉字英文abcdABCD1234</p>
+    <p class="text-info">.text-info汉字英文abcdABCD1234</p>
+    <p class="text-warning">.text-warning汉字英文abcdABCD1234</p>
+    <p class="text-danger">.text-danger汉字英文abcdABCD1234</p>
+    <p class="text-secondary">.text-secondary汉字英文abcdABCD1234</p>
+    <p class="text-dark bg-light">.text-dark .bg-light汉字英文abcdABCD1234</p>
+    <p class="text-light bg-success">.text-light .bg-success浅灰字体,见test-dark的背景色1234</p>
+    <p class="text-white bg-info" style="background-color:skyblue">.text-white .bg-info白色的字汉字英文abcdABCD1234</p>
+    <hr/>
+    <h2>表格</h2>
+    <style>
+        td {
+         /* text-align: center; */
+        }
+    </style>
+    <table class="table text-center">
+        普通表格,再+ table-dark给表格穿黑衣服
+        <thead>
+        <tr>
+            <th>标题1</th>
+            <th>标题2</th>
+            <th>标题3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <hr/>
+    <table class="table table-striped text-center">
+        条纹表格
+        <thead>
+        <tr>
+            <th>标题1</th>
+            <th>标题2</th>
+            <th>标题3</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+
+
+    </table>
+    <hr/>
+    <table class="table table-bordered table-hover text-center">
+        边框表格,+hover,不是响应式表格,内容超出后会出界
+
+        <thead>
+        <tr>
+            <th>标题1</th>
+            <th>标题2</th>
+            <th>标题3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AAAA</td>
+            <td>BBBB</td>
+            <td>CCCC</td>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td>bbbb</td>
+            <td>cccc</td>
+        </tr>
+        <tr>
+            <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <hr/>
+    <table class="table table-bordered table-hover table-sm text-center">
+        thead, tbody, thead用.thead-dark皮肤, table-sm减少td内边距小型表格small
+        <thead class="thead-dark">
+        <tr>
+            <th>标题1</th>
+            <th>标题2</th>
+            <th>标题3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AAAA</td>
+            <td>BBBB</td>
+            <td>CCCC</td>
+        </tr>
+        <tr>
+            <td>aaaa</td>
+            <td>bbbb</td>
+            <td>cccc</td>
+        </tr>
+        <tr>
+            <td>1111</td>
+            <td>2222</td>
+            <td>3333</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <table class="table table-responsive-sm table-sm text-center">
+        table-responsive-*,响应式表格有滚动条,如果不是响应式表格,内容超出之后没有滚动条
+        <thead class="thead-dark">
+        <tr>
+            <th>标题1</th>
+            <th>标题2</th>
+            <th>标题3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>AAAAAAAAAAAAA</td>
+            <td>BBBBBBBBBBBBB</td>
+            <td>CCCCCCCCCCCCC</td>
+        </tr>
+        <tr>
+            <td>aaaaaaaaaaaaa</td>
+            <td>bbbbbbbbbbbbb</td>
+            <td>ccccccccccccc</td>
+        </tr>
+        <tr>
+            <td>1111111111111</td>
+            <td>2222222222222</td>
+            <td>3333333333333</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <h2>形状</h2>
+    <p>.rounded圆角</p>
+    <img src="/picture/hhh.jpg" width="100" height="95" class="rounded" alt="picture"/>
+    <hr/>
+    <p>.rounded-circle椭圆</p>
+    <img src="/picture/hhh.jpg" width="120" height="100" class="rounded-circle" alt="picture"/>
+    <hr/>
+    <p>.img-thumbnail缩略图,有边框</p>
+    <img src="/picture/hhh.jpg" width="100" height="95" class="img-thumbnail" alt="picture"/>
+    <hr/>
+    <p>.float-left,right,左浮动,右浮动</p>
+    <div class="clearfix">
+        <img src="/picture/hhh.jpg" width="100" height="95" class="float-left" alt="picture"/>
+        <img src="/picture/hhh.jpg" width="100" height="95" class="float-right" alt="picture"/>
+    </div>
+
+
+    <hr/>
+    <p>.img-fluid响应式图片,自动调节宽高</p>
+    <img src="/picture/water.jpg" class="img-fluid" alt="picture"/>
+    <hr/>
+    <h2>提示框</h2>
+    <div class="alert alert-success alert-dismissible show fade" >
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <b>这里是提示信息<a href="http://www.baidu.com" class="alert-link">www.baidu.com</a></b>
+    </div>
+    <div class="alert alert-info alert-dismissible show fade">
+        <button class="close" data-dismiss="alert">&times;</button>
+        <b>这里是提示信息<a href="http://www.baidu.com" class="alert-link">www.baidu.com</a></b>
+    </div>
+    <hr/>
+    <h2>disabled</h2>
+    <button class="btn btn-success btn-lg" disabled>禁用的按钮</button>
+    <button class="btn btn-success btn-lg disabled">.disable类可以点击</button>
+    <button class="btn btn-success btn-lg active">按下的按钮</button>
+    <a class="btn btn-success btn-lg disabled" href="http://www.baidu.com">这是个连接,disabled作为class类</a>
+    <hr/>
+    <h2>按钮组</h2>
+    <div class="btn-group">
+        <button class="btn btn-success btn-sm">btn-group</button>
+        <button class="btn btn-primary btn-sm">btn-group</button>
+        <button class="btn btn-warning btn-sm">btn-group</button>
+    </div>
+    <div class="btn-group-lg">
+        <button class="btn btn-success btn-sm">btn-group-lg</button>
+        <button class="btn btn-primary btn-sm">btn-group-sm</button>
+        <button class="btn btn-warning btn-sm">btn-group-lg</button>
+    </div>
+    <div class="btn-group-vertical">
+        <button class="btn btn-success btn-sm">btn-group-vertical</button>
+        <button class="btn btn-primary btn-sm">btn-group-vertical</button>
+        <button class="btn btn-warning btn-sm">btn-group-vertical</button>
+    </div>
+    <p>下拉菜单</p>
+    <div class="btn-group">
+        <button class="btn btn-success btn-sm">btn-group-vertical</button>
+        <button class="btn btn-success btn-sm">btn-group-vertical</button>
+        <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">btn-group-vertical</button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">to baidu</a>
+            <a href="#" class="dropdown-item">to google</a>
+        </div>
+    </div>
+    <p>下拉菜单与按钮分离</p>
+    <div class="btn-group">
+        <button class="btn btn-primary">普通按钮</button>
+        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"><span
+                class="caret"></span></button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">to baidu</a>
+            <a href="#" class="dropdown-item">to google</a>
+        </div>
+    </div>
+    <hr/>
+    <h2>徽章</h2>
+    <h6>徽章搭配span标签使用,圆角型徽章<span class="badge badge-success">峡谷英雄</span></h6>
+    <h6>药丸型徽章<span class="badge badge-pill badge-success">峡谷英雄</span></h6>
+    <button class="btn btn-primary">插入到标签里的徽章<span class="badge badge-light">10</span></button>
+    <hr/>
+    <h2>进度条</h2>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:50%">50%</div>
+    </div>
+    <br/>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:75%">75%</div>
+    </div>
+    <br/>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:10%">10%</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:40%">50%</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:30%">80%</div>
+    </div>
+    <hr/>
+    <h2>用无序ul分页</h2>
+    <ul class="pagination pagination-sm">
+        <li class="page-item disabled"><a class="page-link" href="#">previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item active"><a class="page-link" href="#">next</a></li>
+    </ul>
+    <hr/>
+    <h2>面包屑导航</h2>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="">photo</a></li>
+        <li class="breadcrumb-item"><a href="">first</a></li>
+        <li class="breadcrumb-item active"><a href="">second</a></li>
+    </ul>
+    <hr/>
+    <h2>列表</h2>
+    <ul class="list-group">
+        <li class="list-group-item">无连接,静态</li>
+        <li class="list-group-item disabled">first item</li>
+        <li class="list-group-item active">first item</li>
+    </ul>
+    <hr/>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-success list-group-item-action" href="">有链接,动态</a>
+        <a class="list-group-item list-group-item-info list-group-item-action" href="">有链接,动态</a>
+    </div>
+    <hr/>
+    <h2>卡片</h2>
+    <div class="card">
+        <div class="card-header">card-header</div>
+        <div class="card-body">card-body</div>
+        <div class="card-footer">card-footer</div>
+    </div>
+    <hr/>
+    <div class="card bg-light text-white clearfix" style="width:60%">
+        <!-- card-img-top图片显示在卡片上方, card-img-bottom图片显示在下方-->
+        <img src="/picture/hhh.jpg" class="card-img-top img-fluid" alt="picture"/>
+        <div class="card-img-overlay">
+            <h5 class="card-title">card-title</h5>
+            <p class="card-text">hhhhhhhhhhhhhh111111111福福福福福</p>
+            <a class="card-link" href="">to google</a>
+        </div>
+    </div>
+    <hr/>
+    <h2>下拉菜单</h2>
+    <div class="dropup"><!--.dropdown下拉-->
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">下拉</button>
+        <div class="dropdown-menu dropdown-menu-left"><!--与按钮右对齐-->
+            <h5 class="dropdown-header">search enging</h5>
+            <a href="" class="dropdown-item">to baidu</a>
+            <a href="" class="dropdown-item">to google</a>
+            <div class="dropdown-divider"></div>
+            <h5 class="dropdown-header">other</h5>
+            <a href="" class="dropdown-item disabled">to tencent</a>
+            <a href="" class="dropdown-item active">to vue</a>
+        </div>
+    </div>
+    <hr/>
+    <h2>折叠</h2>
+    <button class="btn btn-primary" data-toggle="collapse" data-target=".fold">折叠与展开</button>
+    <div class="fold collapse show">.show默认显示<p>this is collapse <br/>和哈哈哈哈</p></div>
+    
+    <h2>手风琴例子</h2>
+    <div id="parent-x">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#son-1">内容1</a>
+            </div>
+            <div class="collapse show" id="son-1" data-parent="#parent-x">
+                <div class="card-body"><p>这里是内容1的内容</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#son-2">内容2</a>
+            </div>
+            <div class="collapse" id="son-2" data-parent="#parent-x">
+                <div class="card-body"><p>这里是内容2的内容</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#son-3">内容3</a>
+            </div>
+            <div class="collapse" id="son-3" data-parent="#parent-x">
+                <div class="card-body"><p>这里是内容3的内容</p></div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <h2>导航</h2>
+    <ul class="nav justify-content-center nav-tabs nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">link1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">link2222222</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">link3333</a>
+        </li>
+    </ul>
+    <hr/>
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">link1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">link1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">link1</a>
+        </li>
+    </ul>
+    <hr/>
+    <h2>选项卡切换</h2>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#first_tab">first_tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#second_tab">second_tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#third_tab">third_tab</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="first_tab" class="container tab-pane active">
+            <h4>first_tab</h4>
+            <p>这里是first_tab的内容</p>
+        </div>
+        <div id="second_tab" class="container tab-pane fade">
+            <h4>second_tab</h4>
+            <p>这里是second_tab的内容</p>
+        </div>
+        <div id="third_tab" class="container tab-pane fade">
+            <h4>third_tab</h4>
+            <p>这里是third_tab的内容</p>
+        </div>
+    </div>
+    <hr/>
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#fourth_tab">fourth_tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#fiveth_tab">fiveth_tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#sixth_tab">sixth_tab</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="fourth_tab" class="container tab-pane active">
+            <h4>fourth_tab</h4>
+            <p>这里是Fourth_tab</p>
+        </div>
+        <div id="fiveth_tab" class="container tab-pane fade">
+            <h4>fiveth_tab</h4>
+            <p>这里是fiveth_tab</p>
+        </div>
+        <div id="sixth_tab" class="container tab-pane fade">
+            <h4>sixth_tab</h4>
+            <p>这里是sixth_tab</p>
+        </div>
+    </div>
+    <hr/>
+    <h2>表单</h2>
+    <form>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" placeholder="email" id="email"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="email" class="form-control" placeholder="password" id="password"/>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"/>remeber me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+    <hr/>
+    <form>
+        <div class="form-group">
+            <label for="text_input">type="text"</label>
+            <input type="text" class="form-control" id="text_input"/>
+        </div>
+        <div class="form-group">
+            <label for="password_input">type="password"</label>
+            <input type="password" class="form-control" id="password_input"/>
+        </div>
+        <div class="form-group">
+            <label for="textarea_text">textarea</label>
+            <textarea class="form-control" id="textarea_text"></textarea>
+        </div>
+        <hr/>
+        复选
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"/>option1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"/>option1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" disabled/>option1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"/>option1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"/>option1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" disabled/>option1
+            </label>
+        </div>
+    </form>
+    <hr/>
+    <form>单选
+        <div class="radio">
+            <label><input type="radio" name="option"/>option2</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="option"/>option2</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="option" disabled/>option2</label>
+        </div>
+        <label class="radio-inline"><input type="radio" name="option"/>option2</label>
+        <label class="radio-inline"><input type="radio" name="option"/>option2</label>
+        <label class="radio-inline"><input type="radio" name="option" disabled/>option2</label>
+    </form>
+    <hr/>
+    <form>
+        <h3>下拉</h3>
+        <div class="form-group">
+            <label for="signal_drop">单选下拉</label>
+            <select class="form-control" id="signal_drop">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br/>
+            <label for="checkbox_drop">多选下拉</label>
+            <select multiple class="form-control" id="checkbox_drop">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+    </form>
+    <hr/>
+    <h2>输入框组</h2>
+    <form>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="email"/>
+            <div class="input-group-append">
+                <span class="input-group-text">@qq.com</span>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">姓名</span>
+            </div>
+            <input type="text" class="form-control" placeholder="name"/>
+        </div>
+    </form>
+    <hr/>
+    <h2>自定义radio, checkbox</h2>
+    <form>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="radio_0" class="custom-control-input" id="radio_0"/>
+            <label class="custom-control-label" for="radio_0">自定义单选框</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="radio_0" class="custom-control-input" id="radio_1"/>
+            <label class="custom-control-label" for="radio_1">自定义单选框</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="radio_0" class="custom-control-input" id="radio_2"/>
+            <label class="custom-control-label" for="radio_2">自定义单选框</label>
+        </div>
+        <hr/>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" name="checkbox_0" class="custom-control-input" id="checkbox_0"/>
+            <label class="custom-control-label" for="checkbox_0">自定义复选框</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" name="checkbox_0" class="custom-control-input" id="checkbox_1"/>
+            <label class="custom-control-label" for="checkbox_1">自定义复选框</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+            <input type="checkbox" name="checkbox_0" class="custom-control-input" id="checkbox_2"/>
+            <label class="custom-control-label" for="checkbox_2">自定义复选框</label>
+        </div>
+        <hr/>
+        <p>自定义select</p>
+        <select name="select_0" class="custom-select-lg">
+            <option selected>请选择</option>
+            <option value="bwm">宝马</option>
+            <option value="bc">奔驰</option>
+            <option value="fll">法拉利</option>
+        </select>
+        <hr/>
+        <label for="range_id_0">自定义滑块</label>
+        <input type="range" class="custom-range col-4" id="range_id_0" name="range_0"/>
+        <hr/>
+        <label>上传文件</label>
+        <div class="custom-file col-4">
+            <input type="file" class="custom-file-input" id="file_id_0" name="file_0"/>
+            <label class="custom-file-label" for="file_id_0">选择文件</label>
+        </div>
+    </form>
+    <hr/>
+    <h2>轮播</h2>
+    <style>
+        #roll {
+            width: 30%;
+        }
+    </style>
+    <div id="roll" class="carousel slide" data-ride="carousel">
+        <!--指示符-->
+        <ul class="carousel-indicators">
+            <li data-target="#roll" data-slide-to="0" class="active"></li>
+            <li data-target="#roll" data-slide-to="1"></li>
+            <li data-target="#roll" data-slide-to="2"></li>
+        </ul>
+
+        <!--轮播图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/picture/green1.jpg" class="img-fluid" alt="green"/>
+            </div>
+            <div class="carousel-item">
+                <img src="/picture/water1.jpg" class="img-fluid" alt="water"/>
+                <div class="carousel-caption">
+                    <h3>你好</h3>
+                    <p>欢迎您!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/picture/hhh1.jpg" class="img-fluid" alt="hhh"/>
+            </div>
+
+        </div>
+
+        <!--左右切换按钮-->
+        <a class="carousel-control-prev" href="#roll" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#roll" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <hr/>
+    <h2>模态窗口</h2>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#modal_0">打开模态窗口</button>
+    <div id="modal_0" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6>modal头部</h6>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>这里是身体body部分</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <h2>悬浮提示</h2>
+    <p>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="我显示在上方">to google</a>
+        &nbsp;
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="我在下方方">to google</a>
+    </p>
+    <hr/>
+    <p><a href="#" data-toggle="popover" data-trigger="hover" title="标题" data-content="内容">to baidu</a></p>
+    <hr/>
+    <h2>flex</h2>
+    <div class="d-flex p-5 bg-primary text-white flex-warp justify-content-between" >
+        <div class="p-2 bg-info">flex-item-1</div>
+        <div class="p-2 bg-danger">flex-item-1hhhhhhhhh</div>
+        <div class="p-2 bg-success">flex-item-2</div>
+        <div class="p-2 bg-success">flex-item-1</div>
+
+    </div>
+
+
+
+</div>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+
+</body>
+</html>
+
