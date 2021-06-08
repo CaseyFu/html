@@ -75,27 +75,22 @@
         color: #444444;
         background: #f3f3f3;
         border: 1px #dadada solid;
-        padding: 8px 20px;
+        padding: 7px 20px;
         border-radius: 3px;
         font-weight: bold;
         font-size: 12px;
         outline: none;
       }
-
       button:hover {
         border: 1px #c6c6c6 solid;
         box-shadow: 1px 1px 1px #eaeaea;
         color: #333333;
         background: #f7f7f7;
       }
-
       button:active {
         box-shadow: inset 1px 1px 1px #dfdfdf;
       }
-
-      /* Blue button as seen on translate.google.com*/
       button.blue {
-        
         color: white;
         background: #4c8ffb;
         border: 1px #3079ed solid;
@@ -117,7 +112,6 @@
 
       label{
         display: inline-block;
-        width: 100px;
         text-align: left;
         line-height: 26px;
     }
@@ -147,9 +141,13 @@
     }
     label:hover input[type="checkbox"]+span>span{
         opacity: 0.5;
+        
     }
     label input[type="checkbox"]:checked+span>span{
         opacity: 1;
+    }
+    .checkbox-label:hover{
+        cursor: pointer;
     }
     </style>
   </head>
@@ -193,12 +191,12 @@
           />
         </div>
         <div style="height: 20px"></div>
-        <label for="check1">
+        <label for="check1" class="checkbox-label">
             <input type="checkbox" name="chk" id="check1" /><span><span></span></span><span style="vertical-align: middle;">记住我</span>
         </label>
 
         <div style="height: 20px"></div>
-        <button class="blue">登录</button>
+        <button class="blue">登&nbsp;&nbsp;录</button>
       </div>
     </div>
     <div style="height: 100px; background: lightgray">底部</div>
