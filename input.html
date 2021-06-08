@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>transition</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #user {
+        background: url("./img/user.svg") no-repeat 5%;
+        background-size: 18px 18px;
+      }
+      #passwd {
+        background: url("./img/passwd.svg") no-repeat 5%;
+        background-size: 18px 18px;
+      }
+
+      .inp {
+        width: 200px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline-style: none;
+        border: 1px solid #ccc;
+        padding: 7px 0 7px 7px;
+        border-radius: 5px;
+        text-indent: 32px;
+        font-size: 16px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out 0.15s,
+          -webkit-box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s,
+          box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+      .inp:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgba(102, 175, 233, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px rgba(102, 175, 233, 0.6);
+      }
+      .pageWrap {
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        min-height: 100vh;
+        flex-direction: column;
+        -ms-flex-direction: column;
+      }
+      .mid {
+        background-image: url("./img/bg2.min.jpg");
+        background-size: 100%;
+        -webkit-background-size: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .mid::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color: lightgreen;
+        opacity: 0.1;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+
+      button {
+        color: #444444;
+        background: #f3f3f3;
+        border: 1px #dadada solid;
+        padding: 8px 20px;
+        border-radius: 3px;
+        font-weight: bold;
+        font-size: 12px;
+        outline: none;
+      }
+
+      button:hover {
+        border: 1px #c6c6c6 solid;
+        box-shadow: 1px 1px 1px #eaeaea;
+        color: #333333;
+        background: #f7f7f7;
+      }
+
+      button:active {
+        box-shadow: inset 1px 1px 1px #dfdfdf;
+      }
+
+      /* Blue button as seen on translate.google.com*/
+      button.blue {
+        
+        color: white;
+        background: #4c8ffb;
+        border: 1px #3079ed solid;
+        box-shadow: inset 0 1px 0 #80b0fb;
+      }
+
+      button.blue:hover {
+        border: 1px #2c64df solid;
+        box-shadow: 0 1px 1px #eaeaea, inset 0 1px 0 #5a94f1;
+        background: #3f83f1;
+        cursor: pointer;
+      }
+
+      button.blue:active {
+        box-shadow: inset 0 2px 5px #1d5cd3;
+      }
+
+
+
+      label{
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+        line-height: 26px;
+    }
+    label input[type="checkbox"]{
+        display: none;
+    }
+    label input[type="checkbox"]+span{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        padding: 2px;
+        border: 2px solid #ccc;
+        vertical-align: sub;
+        margin-right: 5px;
+    }
+    label input[type="checkbox"]+span>span{
+        float: left;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #4c8ffb;
+        opacity: 0;
+    }
+    label input[type="checkbox"]:checked+span{
+        border-color: #4c8ffb;
+    }
+    label:hover input[type="checkbox"]+span>span{
+        opacity: 0.5;
+    }
+    label input[type="checkbox"]:checked+span>span{
+        opacity: 1;
+    }
+    </style>
+  </head>
+
+  <body class="pageWrap">
+    <div style="height: 100px; background: lightgray">顶部</div>
+    <div
+      style="position: relative; flex: 1; -ms-flex: 1; padding: 50px"
+      class="mid"
+    >
+      <div
+        style="
+          position: absolute;
+          top: 150px;
+          right: 150px;
+          width: 300px;
+          height: 300px;
+          background: white;
+          box-shadow: 0 0 8px 2px rgba(180, 180, 180, 0.8);
+          z-index: 2;
+        "
+      >
+        <div style="height: 50px"></div>
+        <div>
+          <input
+          class="inp"
+            placeholder="请输入工号"
+            type="text"
+            id="user"
+            style="width: 200px; margin-left: 50px"
+          />
+        </div>
+        <div style="height: 20px"></div>
+        <div>
+          <input
+          class="inp"
+            placeholder="请输入密码"
+            type="password"
+            id="passwd"
+            style="width: 200px; margin-left: 50px"
+          />
+        </div>
+        <div style="height: 20px"></div>
+        <label for="check1">
+            <input type="checkbox" name="chk" id="check1" /><span><span></span></span><span style="vertical-align: middle;">记住我</span>
+        </label>
+
+        <div style="height: 20px"></div>
+        <button class="blue">登录</button>
+      </div>
+    </div>
+    <div style="height: 100px; background: lightgray">底部</div>
+  </body>
+</html>
