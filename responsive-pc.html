@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>responsive-pc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* pc width > 1024px */
+      body {
+        background-color: yellow;
+      }
+      /* ipad pro */
+      @media screen and (max-width: 1024px) {
+        body {
+          background-color: #ff00ff;
+        }
+      }
+      /* ipad */
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: green;
+        }
+      }
+      /* iphone6 7 8 plus */
+      @media screen and (max-width: 414px) {
+        body {
+          background-color: blue;
+        }
+      }
+      /* iphoneX */
+      @media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 3) {
+        body {
+          background-color: #0ff000;
+        }
+      }
+      /* iphone6 7 8 */
+      @media screen and (max-width: 375px) and (-webkit-device-pixel-ratio: 2) {
+        body {
+          background-color: #0ff000;
+        }
+      }
+      /* iphone5 */
+      @media screen and (max-width: 320px) {
+        body {
+          background-color: #0ff000;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    1
+  </body>
+</html>
