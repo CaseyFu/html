@@ -2,11 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>transition</title>
+    <title>login</title>
     <style>
-      * {
+      *{
         margin: 0;
         padding: 0;
+      }
+      html, body{
+        width: 100%;
+       height:100%
       }
       #user {
         background: url("./img/user.svg") no-repeat 5%;
@@ -48,12 +52,13 @@
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
-        min-height: 100vh;
         flex-direction: column;
         -ms-flex-direction: column;
+        align-items: center;
       }
+    
       .mid {
-        background-image: url("./img/bg2.min.jpg");
+        /* background-image: url("./img/bg2.min.jpg"); */
         background-size: 100%;
         -webkit-background-size: 100%;
         background-attachment: fixed;
@@ -64,7 +69,7 @@
         top: 0;
         left: 0;
         content: "";
-        background-color: lightgreen;
+        background-color: blue;
         opacity: 0.1;
         z-index: 1;
         width: 100%;
@@ -72,6 +77,7 @@
       }
 
       button {
+
         color: #444444;
         background: #f3f3f3;
         border: 1px #dadada solid;
@@ -87,9 +93,11 @@
         color: #333333;
         background: #f7f7f7;
       }
+
       button:active {
         box-shadow: inset 1px 1px 1px #dfdfdf;
       }
+
       button.blue {
         color: white;
         background: #4c8ffb;
@@ -108,54 +116,52 @@
         box-shadow: inset 0 2px 5px #1d5cd3;
       }
 
-
-
-      label{
-        display: inline-block;
-        text-align: left;
-        line-height: 26px;
-    }
-    label input[type="checkbox"]{
-        display: none;
-    }
-    label input[type="checkbox"]+span{
-        box-sizing: border-box;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        padding: 2px;
-        border: 2px solid #ccc;
-        vertical-align: sub;
-        margin-right: 5px;
-    }
-    label input[type="checkbox"]+span>span{
-        float: left;
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: #4c8ffb;
-        opacity: 0;
-    }
-    label input[type="checkbox"]:checked+span{
-        border-color: #4c8ffb;
-    }
-    label:hover input[type="checkbox"]+span>span{
-        opacity: 0.5;
-        
-    }
-    label input[type="checkbox"]:checked+span>span{
-        opacity: 1;
-    }
-    .checkbox-label:hover{
+    .checkbox-container:hover{
         cursor: pointer;
     }
+
+    .checkbox-container {
+  position: relative;
+  width: 100px;
+}
+
+.checkbox-container input:checked + .show-box {
+  background: #3f83f1;
+  /* 这里是背景颜色，可以自定义设置 */
+}
+
+.checkbox-container .show-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #d8d8d8;
+  /* 这里是对勾颜色，可以自定义，和勾选框背景色色差较大 */
+  background: white;
+}
+
+.checkbox-container .show-box:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
     </style>
   </head>
 
   <body class="pageWrap">
-    <div style="height: 100px; background: lightgray">顶部</div>
+    
+    
+
     <div
-      style="position: relative; flex: 1; -ms-flex: 1; padding: 50px"
+      style="position: relative; flex: 1 !important; padding: 50px"
       class="mid"
     >
       <div
@@ -191,14 +197,15 @@
           />
         </div>
         <div style="height: 20px"></div>
-        <label for="check1" class="checkbox-label">
-            <input type="checkbox" name="chk" id="check1" /><span><span></span></span><span style="vertical-align: middle;">记住我</span>
+
+        <label for="check1" class="checkbox-container">
+            <input type="checkbox" name="chk" id="check1" /><div class="show-box" ></div>&nbsp;&nbsp;<span>记住我</span>
         </label>
 
         <div style="height: 20px"></div>
         <button class="blue">登&nbsp;&nbsp;录</button>
       </div>
     </div>
-    <div style="height: 100px; background: lightgray">底部</div>
+   
   </body>
 </html>
