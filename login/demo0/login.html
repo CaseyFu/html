@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Material Admin</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="all,follow">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-wrapper">
+      <div class="login-left">
+        <h1>欢迎使用</h1>
+        <p class="display-6">纬创资通 化学品管理系统</p>
+      </div>
+      <div class="login-right">
+        <div class="login-main">
+          <div class="form-group">
+            <img src="./img/wistron.png" style="display: inline-block;max-width: 30%;height: auto;" />
+            <div class="display-6" style="display: inline-block;vertical-align: middle;">化学品管理系统</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">选择域</label>
+            <select class="form-control cursor-pointer" id="exampleFormControlSelect1">
+              <option>WKSCN</option>
+              <option>WCQ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="register-username">工号</label>
+            <input class="form-control" id="register-username" type="text" name="registerUsername" placeholder="请输入工号">
+          </div>
+          <div class="form-group">
+            <label for="register-password">密码</label>
+            <input class="form-control" id="register-password" type="password" name="registerPassword"
+              placeholder="请输入密码">
+          </div>
+          <div style="height:50px;">
+            <div class="form-check float-left" style="vertical-align: middle;">
+              <input class="form-check-input cursor-pointer" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label cursor-pointer" for="defaultCheck1">
+                记住我
+              </label>
+            </div>
+            <button id="regbtn" type="button" name="registerSubmit" class="btn btn-primary btn-login">登&nbsp;录</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $("#regbtn").click(function () {
+        $().message("Hello world!");
+      })
+    })
+  </script>
+</body>
+
+</html>
